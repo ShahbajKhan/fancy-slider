@@ -37,6 +37,7 @@ const showImages = (images) => {
     h1.innerText = `No Photos Found`;
     errorDiv.appendChild(h1);
   } else {
+    document.getElementById("errorMessage").style.display= "none";
     imagesArea.style.display = 'block';
     images.forEach(image => {
       let div = document.createElement('div');
